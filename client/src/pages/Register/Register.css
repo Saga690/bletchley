@@ -4,15 +4,23 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
+.main {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    min-width: 100vw;
     align-items: center;
-    background: url('./src/assets/background.jpg') no-repeat;
+    /* background: url('./src/assets/background2.jpg') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 100;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .wrapper {
@@ -96,6 +104,10 @@ body {
     font-size: 16px;
     color: #333;
     font-weight: 700;
+}
+
+.wrapper button:hover {
+    background: #e4d9d9;
 }
 
 .wrapper .register-link {
