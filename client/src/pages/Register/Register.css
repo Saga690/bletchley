@@ -126,3 +126,13 @@
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+.alert {
+    padding: 20px;
+    background-color: rgb(29, 3, 3); 
+    color: white;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    text-align: center;
+  }
