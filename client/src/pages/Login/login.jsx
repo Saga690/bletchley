@@ -1,6 +1,6 @@
 import React from 'react'
 import './login.css'
-import { FaUser } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
 
 const Login = () => {
@@ -15,7 +15,7 @@ const Login = () => {
           <h1>Login</h1>
           <div className="input-box">
             <input type="email" placeholder='Email' required />
-            <FaUser className='icon' />
+            <MdEmail className='icon' />
           </div>
           <div className="input-box">
             <input type="password" placeholder='Password' required />

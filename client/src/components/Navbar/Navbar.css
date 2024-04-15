@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    /* background-color: brown; */
+    padding: 25px 60px;
+    margin: 0 2.5vw;
+    align-items: center;
+}
+
+.logo {
+    font-size: 80px;
+    color: hsl(0, 0%, 50%);
+    font-family: "Jacquard 24", system-ui;
+}
+
+.user {
+    font-size: 12px;
+}
+
+.span {
+    color: burlywood;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(216, 151, 30);
+}

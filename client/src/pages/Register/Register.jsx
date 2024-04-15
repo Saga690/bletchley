@@ -1,9 +1,15 @@
 import React from 'react'
+import { useContext } from "react";
 import "./Register.css"
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { AuthContext } from '../../context/AuthContext';
 
 const Register = () => {
+
+  const { registerInfo, updateRegisterInfo } = useContext(AuthContext);
+
   return (
     <div className='main'>
       <video autoPlay muted loop id="myVideo">
@@ -14,15 +20,15 @@ const Register = () => {
         <form action="">
           <h1>Register</h1>
           <div className="input-box">
-            <input type="text" placeholder='Username' required />
+            <input type="text" placeholder='Username' required onChange={(e) => updateRegisterInfo({...registerInfo, name: e.target.value})} />
             <FaUser className='icon' />
           </div>
           <div className="input-box">
-            <input type="email" placeholder='Email' required />
-            <FaUser className='icon' />
+            <input type="email" placeholder='Email' required onChange={(e) => updateRegisterInfo({...registerInfo, email: e.target.value})} />
+            <MdEmail className='icon' />
           </div>
           <div className="input-box">
-            <input type="password" placeholder='Password' required />
+            <input type="password" placeholder='Password' required onChange={(e) => updateRegisterInfo({...registerInfo, password: e.target.value})} />
             <FaLock className='icon' />
           </div>
           <div className="remember-forgot">
